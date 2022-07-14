@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace teste.clima.models.ViewModel
 {
-    public class ClimaCidadeVM
+    public class CidadePrevisaoItemVM
     {
-        public List<ClimaCidadeItemVM> ? CidadesQuentes { get; set; }
-        public List<ClimaCidadeItemVM> ? CidadesFrias { get; set; }
+        public int id { get; set; }
     }
 }

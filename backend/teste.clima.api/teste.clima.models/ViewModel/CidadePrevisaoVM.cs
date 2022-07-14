@@ -8,6 +8,6 @@ namespace teste.clima.models.ViewModel
 {
     public class CidadePrevisaoVM
     {
-
+        public List<CidadePrevisaoItemVM> CidadePrevisaoItems { get; set; }
     }
 }

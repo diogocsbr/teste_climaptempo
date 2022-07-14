@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Cidade\" />
-    <Folder Include="Clima\" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\teste.clima.infra\teste.clima.infra.csproj" />
+    <ProjectReference Include="..\teste.clima.models\teste.clima.models.csproj" />
   </ItemGroup>
 
 </Project>
