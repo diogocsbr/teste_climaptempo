@@ -11,16 +11,16 @@ namespace teste.clima.api.Controllers
     [ApiController]
     public class ClimaController : ControllerBase
     {
-        Mediator mediator;
+        IMediator mediator;
 
-        public ClimaController(Mediator _medi)
+        public ClimaController(IMediator _medi)
         {
             mediator = _medi;
         }
 
         [HttpGet]
         [Route("listar")]
-        public async Task<IActionResult> Listar([FromQuery] string cidade)
+        public async Task<IActionResult> Listar()
         {
             var resp = await mediator.Send(new ListarClimasQuery());
             return Ok(resp);

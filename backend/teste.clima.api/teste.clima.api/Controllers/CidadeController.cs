@@ -11,9 +11,9 @@ namespace teste.clima.api.Controllers
     [ApiController]
     public class CidadeController : ControllerBase
     {
-        Mediator mediator;
+        IMediator mediator;
 
-        public CidadeController(Mediator _medi)
+        public CidadeController(IMediator _medi)
         {
             mediator = _medi;
         }

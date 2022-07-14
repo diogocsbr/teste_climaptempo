@@ -1,7 +1,12 @@
 using MediatR;
 
+using Microsoft.AspNetCore.Localization;
+using Microsoft.EntityFrameworkCore;
+
+using System.Globalization;
 using System.Reflection;
 
+using teste.clima.models.Models;
 using teste.clima.services.Cidade;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddMediatR(typeof(SelecionarCidadePrevisaoQueryHandler).GetTypeInfo().Assembly);
 
 var app = builder.Build();

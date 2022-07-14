@@ -8,6 +8,10 @@ namespace teste.clima.models.ViewModel
 {
     public class CidadePrevisaoItemVM
     {
-        public int id { get; set; }
+        public DateTime Data { get;set; }
+        public string DiaSemana { get; set; } = string.Empty;
+        public string Tempo { get; set; } = string.Empty;
+        public decimal Minima { get; set; }
+        public decimal Maxima { get; set; }
     }
 }
